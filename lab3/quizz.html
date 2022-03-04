@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Mateus">
+    <meta name="keywords" content="Egipto">
+    <meta name="description" content="Website sobre Egipto">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/egiptoTitulo.ico"/>
+    <title>Cairo</title>
+</head>
+
+<body style="background-color:white">
+    <h1>Cairo</h1>
+    <img src="images/bodyEgipto.jpg">
+    <p><a href="index.html">Introdução</a> <a href="local.html">Localização</a> <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informações</a> <a href="../index.html">Home</a>
+    </p>
+
+<h3>Quizz</h3>
+
+<p>Nesta pagina será feito um quizz de forma a verificar o 
+    conhecimento do utilizador sobre a cidade apresentada</p>
+
+<form action="" method="post">
+    <fieldset>
+        <legend>Quizz sobre a cidade Cairo</legend>
+
+        <fieldset>
+            <legend>Info</legend>
+            <p>Nome: <input type="text" name="nome"></p>
+            <p>Apelido: <input type="text" name="apelido"></p>
+            <p>Email: <input type="text" name="email" ></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Perguntas</legend>
+            <p>Insira a data que realizou este quizz: <input type="date" name="dataQuizz"></p>
+
+            <p>A que país pertence esta cidade? <input type="text" name="pais"></p>
+           
+            <p>Qual é a area da cidade? 
+                <input type="radio" name="areaCerta" value="3 085 km²" id="areaCerta"> 
+                <label for="areaCerta">3 085 km²</label>
+                
+                <input type="radio" name="areaErrada1" value="5 085 km²" id="areaErrada1">
+                <label for="areaErrada1">5 085 km²</label>
+
+                <input type="radio" name="areaErrada2" value="1 061 km²" id="areaErrada2">
+                <label for="areaErrada2">1 061 km²</label>
+            </p>
+
+            <p>Que monumentos existem nesta cidade?
+                <input type="checkbox" name="monumentoCerto" value="Museu Egípcio" id="monumentoCerto">
+                <label for="monumentoCerto">Museu Egípcio</label>
+
+                <input type="checkbox" name="monumentoErrado" value="Museu do Louvre" id="monumentoErrado">
+                <label for="monumentoErrado">Museu do Louvre</label>
+
+                <input type="checkbox" name="monumentoCerto" value="Gizé" id="monumentoErrado2">
+                <label for="monumentoErrado2">Gizé</label>
+            </p>
+
+            <p>Selecione as cores da bandeira do país a que esta cidade corresponde: 
+                <input type="color" name="vermelho" id="vermelho">
+                <input type="color" name="branco" id="branco">
+                <input type="color" name="preto" id="preto">
+
+            </p>
+
+            <p>Quantos metros de altura tem a Torre do Cairo?
+                <input type="number" name="187" min="50" max="200" id="187">
+            </p>
+
+            <p>Qual o comprimento do Rio Nilo?
+            <input type="range" name="7088" min="6000" max="8000" id="7088"
+            oninput="taxaN.value = parseInt(taxa.value)">
+            <output name="taxaN" for="taxa">0</output> %
+            </p>
+
+            <input type="image" name="Submissao" id="Submissao">
+            
+        </fieldset>
+
+
+    </fieldset>
+    
+</form>
+
+
+
+</body>
+</html>
